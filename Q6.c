@@ -1,7 +1,14 @@
-#include <stdio.h>
+#include<stdio.h>
 int main(){
-    int a=10;
-    int b=20;
-    printf("%d %d",a,b);
+    char a;
+    printf("Enter the leter:");
+    scanf("%c",&a);
+    if(a=='A'||a=='E'||a=='I'||a=='O'||a=='U'||
+        a=='a'||a=='i'||a=='o'||a=='u'||a=='e'){
+        printf("Vowel");
+    }
+    else {
+        printf("No a vowel");
+    }
     return 0;
 }

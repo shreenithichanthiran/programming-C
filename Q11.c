@@ -1,6 +1,14 @@
-#include <stdio.h>
+#include<stdio.h>
 int main(){
-    char a='A';
-    printf("%c",a);
-    return 0;
+    int a,b,c;
+    scanf("%d%d%d",&a,&b,&c);
+    if(a>b && a>c){
+        printf("%d is largest",a);
+    }
+    else if(a<b && b>c){
+        printf("%d is largest",b);
+    }
+    else{
+        printf("%d is largest",c);
+    }
 }

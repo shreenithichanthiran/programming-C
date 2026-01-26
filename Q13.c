@@ -1,8 +1,12 @@
-#include <stdio.h>
+#include<stdio.h>
 int main(){
-    int a=10;
-    int b=20;
-    int c=a+b;
-    printf("%d",c);
-    return 0;
+    char a;
+    printf("Enter the charegter:");
+    scanf("%c",&a);
+    if(a>='A' && a<='Z'){
+        printf("Uppercase leter");
+    }
+    else{
+        printf("Lowercase leter");
+    }
 }

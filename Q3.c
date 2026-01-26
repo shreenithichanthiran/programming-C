@@ -1,6 +1,10 @@
-#include <stdio.h>
+#include<stdio.h>
 int main(){
-    int a=10;
-    printf("%d",a);
+    int a;
+    printf("Enter the number:");
+    scanf("%d",&a);
+    if(a%5==0){
+        printf("Divisible by 5");
+    }
     return 0;
 }

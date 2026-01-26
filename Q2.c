@@ -1,5 +1,13 @@
-#include <stdio.h>
+#include<stdio.h>
 int main(){
-    printf("Shreenithi C");
+    int a;
+    printf("Enter the number:");
+    scanf("%d",&a);
+    if(a%2==0){
+        printf("even");
+    }
+    else {
+        printf("odd");
+    }
     return 0;
 }

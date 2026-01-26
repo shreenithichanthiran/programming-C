@@ -1,6 +1,11 @@
-#include <stdio.h>
+#include<stdio.h>
 int main(){
-    double a=3.55;
-    printf("%lf",a);
-    return 0;
+    int a;
+    scanf("%d",&a);
+    if(a>=10 && a<=20){
+        printf("Number is within range");
+    }
+    else{
+        printf("Number is wihtout range ");
+    }
 }

@@ -1,6 +1,13 @@
-#include <stdio.h>
+#include<stdio.h>
 int main(){
-    float a=2.75f;
-    printf("%.2f",a);
+    int a,b;
+    printf("Enter the number:");
+    scanf("%d%d",&a,&b);
+    if(a>b){
+        printf("%d is greater",a);
+    }
+    else {
+        printf("%d is greater",b);
+    }
     return 0;
 }

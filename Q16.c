@@ -1,8 +1,11 @@
-#include <stdio.h>
+#include<stdio.h>
 int main(){
-    int a=50;
-    int b=10;
-    int c=a/b;
-    printf("%d",c);
-    return 0;
+    int a,b,c;
+    scanf("%d%d%d",&a,&b,&c);
+    if(a==b && b==c){
+        printf("Equilateral triangle");
+    }
+    else{
+        printf("Not equilateral triangle");
+    }
 }

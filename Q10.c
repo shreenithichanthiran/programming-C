@@ -1,6 +1,12 @@
-#include <stdio.h>
+#include<stdio.h>
 int main(){
-    float a=10.23;
-    printf("%.2f",a);
+    int a;
+    scanf("%d",&a);
+    if(a>=100 && a<=999){
+        printf("Three digit number");
+    }
+    else{
+        printf("Not three digit number");
+    }
     return 0;
 }

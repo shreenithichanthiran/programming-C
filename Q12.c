@@ -1,12 +1,24 @@
-#include <stdio.h>
+#include<stdio.h>
 int main(){
-    int a=10;
-    int b=20;
-    int c;
-    printf("%d %d\n",a,b);
-    c=a;
-    a=b;
-    b=c;
-    printf("%d %d",a,b);
-    return 0;
+    int a;
+    printf("Enter the mark");
+    scanf("%d",&a);
+    if(a>=90 && a<=100){
+        printf("Grade A");
+    }
+    else if (a>=80 && a<=89){
+        printf("Grade B");
+    }
+    else if(a>=70 && a<=79){
+        printf("Grade C");
+    }
+    else if(a>=60 && a<=69){
+        printf("Grade D");
+    }
+    else if(a>=50 && a<=59){
+        printf("Grade E");
+    }
+    else{
+        printf("NO grade");
+    }
 }
