@@ -1,13 +1,10 @@
-#include<stdio.h>
-int main(){
-    int a;
-    printf("Enter the number:");
-    scanf("%d",&a);
-    if(a%2==0){
-        printf("even");
-    }
-    else {
-        printf("odd");
+#include <stdio.h>
+int main() {
+    int n;
+    scanf("%d",&n);
+    for(int a=201;a<201+n;a++){
+        printf("%d ",a);
+
     }
     return 0;
 }

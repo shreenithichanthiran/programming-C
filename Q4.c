@@ -1,13 +1,9 @@
 #include<stdio.h>
 int main(){
-    int a,b;
-    printf("Enter the number:");
-    scanf("%d%d",&a,&b);
-    if(a>b){
-        printf("%d is greater",a);
-    }
-    else {
-        printf("%d is greater",b);
+    int a;
+    scanf("%d",a);
+    for(int i=a;i<0;i--){
+        printf("%d",i);
     }
     return 0;
 }

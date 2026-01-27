@@ -1,10 +1,8 @@
 #include<stdio.h>
 int main(){
-    int a;
-    printf("Enter the number:");
-    scanf("%d",&a);
-    if(a%5==0){
-        printf("Divisible by 5");
+    int m;
+    scanf("%d",&m);
+    for(int i=1;i<=m;i--){
+        printf("%d",i);
     }
-    return 0;
 }
