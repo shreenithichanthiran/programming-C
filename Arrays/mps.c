@@ -8,25 +8,16 @@ int main(){
             scanf("%d",&a[i][j]);
         }
     }
+    int total=0;
     for(int i=0; i<r; i++){
-        int avg;
         int sum=0;
-        int count=0;
         for(int j=0; j<c; j++){
             sum=sum+a[i][j];
         }
-        for(int j=0; j<c; j++){
-            avg=sum/c;
+        if(total<sum){
+            total=sum;
+            printf("%d",i);
         }
-        for(int j=0; j<c; j++){
-            if(avg<a[i][j]){
-                count++;
-            }
-        }
-        if(count>0){
-            printf("%d",count);
-            printf("\n");  
-        }      
     }
     return 0;
 }

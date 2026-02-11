@@ -8,29 +8,21 @@ int main(){
             scanf("%d",&a[i][j]);
         }
     }
-    int m=0;
     int count=0;
     for(int i=0; i<r; i++){
-        int uni=0;
-        int deff=0;
+        int k=0;
         for(int j=0; j<c; j++){
-            if(deff != a[i][j]){
-                deff=a[i][j];
+            if(k<a[i][j]){
+                k=a[i][j];
             }
+            //else if(k>=a[i][j]){
+            //    count++;
+            //}
             else{
-                uni=a[i][j];
                 count++;
             }
         }
-        }
-        for(int  i=0; i<r; i++){
-            for(int j=0; j<c; j++){
-            if(m<count){
-                m=count;
-            }
-        }
-        printf("%d",m);
-        printf("\n");
-        }
+    }
+    printf("%d",count);
     return 0;
 }
