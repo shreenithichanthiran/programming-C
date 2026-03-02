@@ -1,21 +1,23 @@
-#include<stdio.h>
-int main(){
-    int size;
-    int i,j;
-    scanf("%d",&size);
-    int a[size];
-    for( i=0; i<size; i++){
-        scanf("%d", & a[i]);
+#include <stdio.h>
+int main() {
+    int n;
+    scanf("%d", &n);
+    int arr[n];
+    for(int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    for( i=0; i<size; i++){
-        for(int j=0; j<size; j++){
-            if(a[i]==a[j]){
-                 break;
-            }   
+    for(int i = 0; i < n; i++) {
+        int duplicate = 0;
+        for(int j = 0; j < i; j++) {
+            if(arr[i] == arr[j]) {
+                duplicate = 1;
+                break;
+            }
         }
-        if(i==j){
-        printf("%d",a[i]);
+        if(!duplicate) {
+            printf("%d ", arr[i]);
+        }
     }
-    }
+
     return 0;
 }
