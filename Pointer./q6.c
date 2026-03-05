@@ -1,20 +1,19 @@
 #include<stdio.h>
-int isvowel(char *n){
-    return(*n=='a'||*n=='e'|*n=='i'||*n=='o'||*n=='u'||
-    *n=='A'||*n=='E'||*n=='I'||*n=='O'||*n=='U');
+void vowel(char str[]){
+    char *p=str;
+    int count =0;
+    while(*p='\0'){
+        if(*p=='a'||*p=='e'||*p=='i'||*p=='o'||*p=='u'||
+            *p=='A'||*p=='E'||*p=='I'||*p=='O'||*p=='U'){
+                count++;
+            }
+            p++;
+    }
+    printf("%d",count);
 }
 int main(){
     char str[100];
-    scanf("%d",&str);
-    char *p=str;
-    int count=0;
-    while(*p!='\0'){
-        if(isvowel(p)){
-            count++;
-        }
-
-        p++;
-    }
-    printf("%d",count);
+    fgets(str,sizeof(str),stdin);
+    vowel(str);
     return 0;
 }
