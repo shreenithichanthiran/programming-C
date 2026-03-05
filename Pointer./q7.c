@@ -1,16 +1,16 @@
 #include<stdio.h>
-int palindrome(char *n){
-    
+#include<string.h>
+void reverse(char str[]){
+    char *p=str;
+    char *a=p+strlen(p)-1;
+    while(a>=p){
+        printf("%c",*a);
+        a--;
+    }
 }
 int main(){
-    char str[100],rev[100];
-    scanf("%s",&str);
-    char *p=str;
-    int s=0;
-    for(int j=*p-1;0<=j;j--){
-        rev[s]=p[j];
-    }
-    printf("%s",rev[s]);
+    char str[100];
+    fgets(str,sizeof(str),stdin);
+    reverse(str);
     return 0;
-    
 }
